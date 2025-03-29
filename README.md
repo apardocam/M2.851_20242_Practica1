@@ -17,6 +17,7 @@ Para ejecutar el código, asegúrese de tener las dependencias instaladas. Puede
 
 ```bash
 pip install -r requirements.txt
+```
 
 El scrip contiene la función peliculas(año) donde se deberá indicar el año al que se quiere extraer la información. 
 Por ejemplo: si quieremos hacer scraping de películas del año 2020 deberemos ejecutar la función peliculas(2020). Esto
