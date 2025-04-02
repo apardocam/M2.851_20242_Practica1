@@ -40,6 +40,7 @@ Starting movie list (1915) scraping...
 Movies found: 3
 ['/es/pelicula/carmen-1915', '/es/pelicula/the-cheat', '/es/pelicula/el-nacimiento-de-una-nacion']
 
+
 - Obtener la información completa de las películas y generar un archivo CSV:
 ```bash
 from utils import jw_movies
@@ -47,7 +48,9 @@ movie_info_1920 = jw_movies(1920)  # Por defecto, Extractor=True
 print(movie_info_1920.head())
 ```
 Salida esperada:
+
 Información extraída en "1915.csv"
+
 
 ## Consideraciones Adicionales
 - Tiempo de Ejecución:
