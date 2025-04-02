@@ -27,28 +27,30 @@ Si se establece como True, la función extrae información detallada de cada pel
 Si se establece como False, la función únicamente devuelve una lista única de las URLs de las películas encontradas para el año especificado.
 
 ## Ejemplos de Uso
-Obtener solo la lista de URLs de las películas de un año (por ejemplo, 1915):
-from utils import jw_movies
+- Obtener solo la lista de URLs de las películas de un año (por ejemplo, 1915):
 
-- Extraer solo la lista de URLs sin detalle adicional
+```bash
+from utils import jw_movies
 movie_list_1915 = jw_movies(1915, Extractor=False)
 print(movie_list_1915)
+```
 Salida esperada:
-
 Starting movie list (1915) scraping...
 Movies found: 3
 ['/es/pelicula/carmen-1915', '/es/pelicula/the-cheat', '/es/pelicula/el-nacimiento-de-una-nacion']
 
-Obtener la información completa de las películas y generar un archivo CSV:
+- Obtener la información completa de las películas y generar un archivo CSV:
+```bash
 from utils import jw_movies
-
-- Extraer la información detallada y almacenar en un DataFrame
 movie_info_1920 = jw_movies(1920)  # Por defecto, Extractor=True
 print(movie_info_1920.head())
-Durante la ejecución se mostrará el progreso del scraping y, al finalizar, se generará un archivo llamado 1920.csv con toda la información extraída.
+```
+Salida esperada:
+Información extraída en "1915.csv"
 
-Consideraciones Adicionales
-Tiempo de Ejecución:
+## Consideraciones Adicionales
+- Tiempo de Ejecución:
 El proceso de scraping puede tardar varios minutos (o incluso horas) dependiendo de la cantidad de películas a procesar y de las pausas implementadas para evitar sobrecargar el servidor.
-Uso Responsable:
+
+- Uso Responsable:
 Se recomienda ejecutar el script en rangos de años limitados para evitar sobrecargar el portal web de JustWatch. En caso de querer raspar información de varios años consecutivos, es aconsejable incluir pausas prolongadas entre cada ejecución.
