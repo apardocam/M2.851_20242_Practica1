@@ -35,6 +35,7 @@ movie_list_1915 = jw_movies(1915, Extractor=False)
 print(movie_list_1915)
 ```
 Salida esperada:
+
 Starting movie list (1915) scraping...
 Movies found: 3
 ['/es/pelicula/carmen-1915', '/es/pelicula/the-cheat', '/es/pelicula/el-nacimiento-de-una-nacion']
