@@ -58,3 +58,7 @@ El proceso de scraping puede tardar varios minutos (o incluso horas) dependiendo
 
 - Uso Responsable:
 Se recomienda ejecutar el script en rangos de años limitados para evitar sobrecargar el portal web de JustWatch. En caso de querer raspar información de varios años consecutivos, es aconsejable incluir pausas prolongadas entre cada ejecución.
+
+## DOI de Zenodo del dataset generado
+
+https://doi.org/10.5281/zenodo.15127655
