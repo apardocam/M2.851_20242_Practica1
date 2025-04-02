@@ -26,11 +26,11 @@ Indica el año de lanzamiento de las películas a raspar. Por ejemplo, 2020.
 Si se establece como True, la función extrae información detallada de cada película (incluyendo título, año, plataformas de suscripción, valoraciones en JustWatch, IMDb y Rotten Tomatoes, géneros, duración, clasificación por edades, países de producción e imagen del póster) y devuelve un DataFrame de Pandas, además de generar un archivo CSV con el nombre del año correspondiente.
 Si se establece como False, la función únicamente devuelve una lista única de las URLs de las películas encontradas para el año especificado.
 
-Ejemplos de Uso
+## Ejemplos de Uso
 Obtener solo la lista de URLs de las películas de un año (por ejemplo, 1915):
 from utils import jw_movies
 
-# Extraer solo la lista de URLs sin detalle adicional
+- Extraer solo la lista de URLs sin detalle adicional
 movie_list_1915 = jw_movies(1915, Extractor=False)
 print(movie_list_1915)
 Salida esperada:
@@ -42,7 +42,7 @@ Movies found: 3
 Obtener la información completa de las películas y generar un archivo CSV:
 from utils import jw_movies
 
-# Extraer la información detallada y almacenar en un DataFrame
+- Extraer la información detallada y almacenar en un DataFrame
 movie_info_1920 = jw_movies(1920)  # Por defecto, Extractor=True
 print(movie_info_1920.head())
 Durante la ejecución se mostrará el progreso del scraping y, al finalizar, se generará un archivo llamado 1920.csv con toda la información extraída.
