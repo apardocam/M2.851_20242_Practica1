@@ -49,7 +49,7 @@ print(movie_info_1920.head())
 ```
 Salida esperada:
 
-Durante la ejecución se mostrará el progreso del scraping y, al finalizar, se generará un archivo almacenado en la varaible movie_info_1920 con toda la información extraída.
+Durante la ejecución se mostrará el progreso del scraping y, al finalizar, se generará un archivo almacenado en la variable movie_info_1920 con toda la información extraída.
 
 
 ## Consideraciones Adicionales
